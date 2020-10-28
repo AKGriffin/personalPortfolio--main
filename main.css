@@ -1,0 +1,324 @@
+
+/* custom properties */
+:root {
+  /* colors*/
+  --primary: #0274EE ;
+  --primary-variant: #014895 ;
+  --secondary: #74EE02 ;
+  --secondary-variant: #489501 ;
+  --background: #FFF ;
+  --surface: #FFF ;
+  --error: #EE0274 ;
+  --on-primary: #FFF ;
+  --on-secondary: #000 ;
+  --on-background: #000 ;
+  --on-surface: #000 ;
+  --on-error: #000 ;
+
+  /* typography */
+  --typeface: "Arial" ;
+  --typeface-bold: "Arial Black" ;
+  --typeface-narrow: "Arial Narrow" ;
+
+  --size-headline1: calc( 96 * 0.0625rem ) ;
+  --size-headline2: calc( 60 * 0.0625rem ) ;
+  --size-headline3: calc( 48 * 0.0625rem ) ;
+  --size-headline4: calc( 34 * 0.0625rem ) ;
+  --size-headline5: calc( 24 * 0.0625rem ) ;
+  --size-headline6: calc( 20 * 0.0625rem ) ;
+  --size-subtitle1: calc( 16 * 0.0625rem ) ;
+  --size-subtitle2: calc( 14 * 0.0625rem ) ;
+  --size-body1: calc( 16 * 0.0625rem ) ;
+  --size-body2: calc( 14 * 0.0625rem ) ;
+  --size-button: calc( 14 * 0.0625rem ) ;
+  --size-caption: calc( 12 * 0.0625rem ) ;
+  --size-overline: calc( 14 * 0.0625rem ) ;
+
+  /*
+  letter spacing calculation
+  letter spacing = (letter spacing factor / font size in pixels)
+  from the material design typography guidelines
+   */
+  --spacing-headline1: calc( -1.5 / 96 ) ;
+  --spacing-headline2: calc( -0.5 / 60) ;
+  --spacing-headline3: calc( 0 / 48 ) ;
+  --spacing-headline4: calc( 0.25 / 34 ) ;
+  --spacing-headline5: calc( 0 / 24 ) ;
+  --spacing-headline6: calc( 0.15 / 20 ) ;
+  --spacing-subtitle1: calc( 0.15 / 16 ) ;
+  --spacing-subtitle2: calc( 0.1 / 14 ) ;
+  --spacing-body1: calc( 0.5 / 16 ) ;
+  --spacing-body2: calc( 0.25 / 14 ) ;
+  --spacing-button: calc( 1.25 / 12 ) ;
+  --spacing-caption: calc( 0.4 / 12 ) ;
+  --spacing-overline: calc( 1.5 / 14 ) ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+
+}
+
+.wrapper--body {
+  display: grid ;
+}
+
+.header , .footer , .header__navbar, .footer__navbar, .header__list, .footer__list, .contact-card , .projects__list , .projects__card , .skills__list , .skills__card , .specialties__list , .specialties__card , .interests__list , .interests__card  {
+  display: flex ;
+}
+
+/* all lists */
+.header__list, .footer__list, .projects__list , .skills__list , .specialties__list , .interests__list {
+  list-style: none ;
+}
+
+/* all cards */
+.interests__card , .specialties__card , .skills__card , .projects__card , .contact__card , .social-media__card {
+  flex-direction: column ;
+}
+
+.header {
+
+}
+
+.header__navbar {
+
+}
+
+.header__list {
+
+}
+
+.header__list-item {
+
+}
+
+.header__link {
+
+}
+
+.menu__button {
+
+}
+
+
+
+.logo__link {
+
+}
+
+.logo__image {
+
+}
+
+.about {
+
+}
+
+.about__heading {
+
+}
+
+.about__text {
+
+}
+
+.about__more-text {
+
+}
+
+.about__button {
+
+}
+
+.interests {
+
+}
+
+.interests__heading {
+
+}
+
+.interests__text {
+
+}
+
+.interests__list {
+
+}
+
+.interests__list-item {
+
+}
+
+.interests__card {
+
+}
+
+.interests__card-info {
+
+}
+
+.interests__card-heading {
+
+}
+
+.interests__card-text {
+
+}
+
+.interests__card-image {
+
+}
+
+.services {
+
+}
+
+.services__heading {
+
+}
+
+.services__text {
+
+}
+
+.services__list {
+
+}
+
+.services__list-item {
+
+}
+
+.services__card {
+
+}
+
+.services__card-info {
+
+}
+
+.services__card-heading {
+
+}
+
+.services__card-text {
+
+}
+
+.services__card-image {
+
+}
+
+.skills {
+
+}
+
+.skills__list {
+
+}
+
+.skills__list-item {
+
+}
+
+.skills__card {
+
+}
+
+.skills__card-info {
+
+}
+
+.skills__card-heading {
+
+}
+
+.skills__card-text {
+
+}
+
+.skills__card-image {
+
+}
+
+.projects {
+
+}
+
+.projects__heading {
+
+}
+
+.projects__text {
+
+}
+
+.projects__list {
+
+}
+
+.projects__list-item {
+
+}
+
+.projects__card {
+
+}
+
+.projects__card-info {
+
+}
+
+.projects__card-heading {
+
+}
+
+.projects__card-text {
+
+}
+
+.projects__card-image {
+
+}
+
+.contact {
+
+}
+
+.contact__heading {
+
+}
+
+.contact__text {
+
+}
+
+.contact__card {
+
+}
+
+.contact__dictionary {
+
+}
+
+.contact__term {
+
+}
+
+.contact__definition }{
+
+}
+
+.contact__message {
+
+}
+
+.contact__form {
+
+}
