@@ -10,38 +10,16 @@
 
 <body>
 
-  <div class="wrapper--body">
+  <div class="body__wrapper container--grid">
 
     <!---------- header ---------->
 
-    <header id="header" class="header">
+    <header id="header" class="header container--grid">
 
       <!-- logo -->
       <a href="#" class="logo__link">
         <img src="" alt="logo__image">
       </a>
-
-      <!---------- navbar ---------->
-
-      <nav id="headerNavbar" class="header__navbar">
-        <button id="menuButton" type="button" name="button" class="menu__button">Menu</button>
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a href="#" class="header__link">About Me</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">What I Do</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Past Work</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    </header>
 
     <!-- Hero? -->
 <!--
@@ -60,13 +38,36 @@
      <li><a href="#"></a></li>
     </ul>
 -->
+</header>
+
+    <!---------- navbar ---------->
+    <nav id="navbar" class="navbar container--flex">
+      <ul class="navbar__nav container--flex list">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">About Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">What I Do</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Past Work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
     <!---------- main content ---------->
 
-    <main>
+    <main class="container--grid">
 
       <!---------- About Me ---------->
 
-      <section id="about" class="about">
+      <section id="about" class="about container--grid">
 
         <!-- Bio -->
         <h2 class="about__heading">About Me</h2>
@@ -84,14 +85,14 @@
           <p class="interests__text"></p>
 
           <!-- list of interests -->
-          <ul class="interests__list">
+          <ul class="interests__list cards--small cards container--flex list">
 
-            <!-- intetrest card -->
+            <!-- intetrest card card -->
             <li class="interests__list-item">
-              <div class="interests__card">
-                <div class="interests__card-info">
-                  <h4 class="interests__card-heading">Education</h4>
-                  <p class="interests__card-text"></p>
+              <div class="interests__card card--small card">
+                <div class="interests__card-info card-info container--flex">
+                  <h4 class="interests__card-heading card-heading heading">Education</h4>
+                  <p class="interests__card-text card-text"></p>
                 </div>
                 <div class="interests__card-image">
                   <img src="" alt="">
@@ -99,10 +100,10 @@
               </div>
             </li>
             <li class="interests__list-item">
-              <div class="interests__card">
-                <div class="interests__card-info">
-                  <h4 class="interests__card-heading">Simplicity</h4>
-                  <p class="interests__card-text"></p>
+              <div class="interests__card card--small card">
+                <div class="interests__card-info card-info container--flex">
+                  <h4 class="interests__card-heading card-heading heading">Simplicity</h4>
+                  <p class="interests__card-text card-text"></p>
                 </div>
                 <div class="interests__card-image">
                   <img src="" alt="">
@@ -110,10 +111,10 @@
               </div>
             </li>
             <li class="interests__list-item">
-              <div class="interests__card">
-                <div class="interests__card-info">
-                  <h4 class="interests__card-heading">Responsive Design</h4>
-                  <p class="interests__card-text"></p>
+              <div class="interests__card card--small card">
+                <div class="interests__card-info card-info container--flex">
+                  <h4 class="interests__card-heading card-heading heading">Responsive Design</h4>
+                  <p class="interests__card-text card-text"></p>
                 </div>
                 <div class="interests__card-image">
                   <img src="" alt="">
@@ -121,10 +122,10 @@
               </div>
             </li>
             <li class="interests__list-item">
-              <div class="interests__card">
-                <div class="interests__card-info">
-                  <h4 class="interests__card-heading">Accessibility</h4>
-                  <p class="interests__card-text"></p>
+              <div class="interests__card card--small card">
+                <div class="interests__card-info card-info container--flex">
+                  <h4 class="interests__card-heading card-heading heading">Accessibility</h4>
+                  <p class="interests__card-text card-text"></p>
                 </div>
                 <div class="interests__card-image">
                   <img src="" alt="">
@@ -132,10 +133,10 @@
               </div>
             </li>
             <li class="interests__list-item">
-              <div class="interests__card">
-                <div class="interests__card-info">
-                  <h4 class="interests__card-heading">Security</h4>
-                  <p class="interests__card-text"></p>
+              <div class="interests__card card--small card">
+                <div class="interests__card-info card-info container--flex">
+                  <h4 class="interests__card-heading card-heading heading">Security</h4>
+                  <p class="interests__card-text card-text"></p>
                 </div>
                 <div class="interests__card-image">
                   <img src="" alt="">
@@ -148,7 +149,7 @@
 
       <!---------- What I Do ---------->
 
-      <section id="services" class="services">
+      <section id="services" class="services container--grid">
         <h2 class="services__heading">What I Do</h2>
         <p class="services__text"></p>
 
@@ -157,16 +158,16 @@
         <!-- list of specialties -->
         <h3 class="specialties__heading">Specialties</h3>
         <p class="specialties__heading"></p>
-        <ul class="specialties__list">
+        <ul class="specialties__list cards cards--medium container--flex  list">
 
         <!--
           service card
 
           <li class="specialties__list-item">
-            <div class="specialties__card">
-              <div class="specialties__card-info">
-                <h4 class="specialties__card-heading"></h4>
-                <p class="specialties__card-text"></p>
+            <div class="specialties__card card card--medium container--flex">
+              <div class="specialties__card-info card-info container--flex">
+                <h4 class="specialties__card-heading card-heading heading"></h4>
+                <p class="specialties__card-text card-text"></p>
               </div>
               <div class="specialties__card-image">
                 <img src="" alt="">
@@ -176,10 +177,10 @@
         -->
 
           <li class="specialties__list-item">
-            <div class="specialties__card">
-              <div class="specialties__card-info">
-                <h4 class="specialties__card-heading">design and develop</h4>
-                <p class="specialties__card-text">Help to imagine and create a wide variety of professional and personal software and applications</p>
+            <div class="specialties__card card card--medium container--flex">
+              <div class="specialties__card-info card-info container--flex">
+                <h4 class="specialties__card-heading card-heading heading">design and develop</h4>
+                <p class="specialties__card-text card-text">Help to imagine and create a wide variety of professional and personal software and applications</p>
               </div>
               <div class="specialties__card-image">
                 <img src="" alt="">
@@ -187,10 +188,10 @@
             </div>
           </li>
           <li class="specialties__list-item">
-            <div class="specialties__card">
-              <div class="specialties__card-info">
-                <h4 class="specialties__card-heading">search engine optimization</h4>
-                <p class="specialties__card-text">Establish optimization strategies that increase a product's search engine results rankings</p>
+            <div class="specialties__card card card--medium container--flex">
+              <div class="specialties__card-info card-info container--flex">
+                <h4 class="specialties__card-heading card-heading heading">search engine optimization</h4>
+                <p class="specialties__card-text card-text">Establish optimization strategies that increase a product's search engine results rankings</p>
               </div>
               <div class="specialties__card-image">
                 <img src="" alt="">
@@ -198,10 +199,10 @@
             </div>
           </li>
           <li class="specialties__list-item">
-            <div class="specialties__card">
-              <div class="specialties__card-info">
-                <h4 class="specialties__card-heading">analytics</h4>
-                <p class="specialties__card-text">Collect and interpret data to better understand and influence the objectives and goals of a client and their users</p>
+            <div class="specialties__card card card--medium container--flex">
+              <div class="specialties__card-info card-info container--flex">
+                <h4 class="specialties__card-heading card-heading heading">analytics</h4>
+                <p class="specialties__card-text card-text">Collect and interpret data to better understand and influence the objectives and goals of a client and their users</p>
               </div>
               <div class="specialties__card-image">
                 <img src="" alt="">
@@ -209,10 +210,10 @@
             </div>
           </li>
           <li class="specialties__list-item">
-            <div class="specialties__card">
-              <div class="specialties__card-info">
-                <h4 class="specialties__card-heading">???</h4>
-                <p class="specialties__card-text">???</p>
+            <div class="specialties__card card card--medium container--flex">
+              <div class="specialties__card-info card-info container--flex">
+                <h4 class="specialties__card-heading card-heading heading">???</h4>
+                <p class="specialties__card-text card-text">???</p>
               </div>
               <div class="specialties__card-image">
                 <img src="" alt="">
@@ -230,15 +231,15 @@
 
         <!-- list of skills -->
         <section class="skills">
-          <ul class="skills__list">
+          <ul class="skills__list cards--small cards container--flex list">
 
             <!--
             skill card
             <li class="skills__list-item">
-              <div class="skills__card">
-                <div class="skills__card-info">
-                  <h4 class="skills__card-heading"></h4>
-                  <p class="skills__card-text"></p>
+              <div class="skills__card card--small card">
+                <div class="skills__card-info card-info container--flex">
+                  <h4 class="skills__card-heading card-heading heading"></h4>
+                  <p class="skills__card-text card-text"></p>
                 </div>
                 <div class="skills__card-image">
                   <img src="" alt="">
@@ -247,10 +248,10 @@
             </li>
             -->
             <li class="skills__list-item">
-              <div class="skills__card">
-                <div class="skills__card-info">
-                  <h4 class="skills__card-heading">HTML</h4>
-                  <p class="skills__card-text"></p>
+              <div class="skills__card card--small card">
+                <div class="skills__card-info card-info container--flex">
+                  <h4 class="skills__card-heading card-heading heading">HTML</h4>
+                  <p class="skills__card-text card-text"></p>
                 </div>
                 <div class="skills__card-image">
                   <img src="" alt="">
@@ -258,10 +259,10 @@
               </div>
             </li>
             <li class="skills__list-item">
-              <div class="skills__card">
-                <div class="skills__card-info">
-                  <h4 class="skills__card-heading">CSS</h4>
-                  <p class="skills__card-text"></p>
+              <div class="skills__card card--small card">
+                <div class="skills__card-info card-info container--flex">
+                  <h4 class="skills__card-heading card-heading heading">CSS</h4>
+                  <p class="skills__card-text card-text"></p>
                 </div>
                 <div class="skills__card-image">
                   <img src="" alt="">
@@ -269,10 +270,10 @@
               </div>
             </li>
             <li class="skills__list-item">
-              <div class="skills__card">
-                <div class="skills__card-info">
-                  <h4 class="skills__card-heading">JavaScript</h4>
-                  <p class="skills__card-text"></p>
+              <div class="skills__card card--small card">
+                <div class="skills__card-info card-info container--flex">
+                  <h4 class="skills__card-heading card-heading heading">JavaScript</h4>
+                  <p class="skills__card-text card-text"></p>
                 </div>
                 <div class="skills__card-image">
                   <img src="" alt="">
@@ -285,22 +286,22 @@
 
       <!---------- Projects ---------->
 
-      <section class="projects">
+      <section id="projects" class="projects container--grid">
         <h2 class="projects__heading">Past Work</h2>
         <p class="projects__text"></p>
 
         <!-- list of projects -->
-        <ul class="projects__list">
+        <ul class="projects__list container--grid cards cards--large container--flex list">
 
           <!--
           project card
           <li class="projects__list-item">
-            <div class="projects__card">
-              <div class="projects__card-info">
-                <h3 class="projects__card-heading">
+            <div class="projects__card card">
+              <div class="projects__card-info card-info container--flex">
+                <h3 class="projects__card-heading card-heading heading">
                   <a href="#"></a>
                 </h3>
-                <p class="projects__card-text"></p>
+                <p class="projects__card-text card-text"></p>
               </div>
               <div class="projects__card-image">
                 <img src="" alt="">
@@ -310,12 +311,12 @@
           -->
 
           <li class="projects__list-item">
-            <div class="projects__card">
-              <div class="projects__card-info">
-                <h3 class="projects__card-heading">
+            <div class="projects__card card">
+              <div class="projects__card-info card-info container--flex">
+                <h3 class="projects__card-heading card-heading heading">
                   <a href="#">Tetris</a>
                 </h3>
-                <p class="projects__card-text">Basic Tetris game made with HTML, CSS, and JavaScript</p>
+                <p class="projects__card-text card-text">Basic Tetris game made with HTML, CSS, and JavaScript</p>
               </div>
               <div class="projects__card-image">
                 <img src="" alt="">
@@ -323,12 +324,12 @@
             </div>
           </li>
           <li class="projects__list-item">
-            <div class="projects__card">
-              <div class="projects__card-info">
-                <h3 class="projects__card-heading">
+            <div class="projects__card card">
+              <div class="projects__card-info card-info container--flex">
+                <h3 class="projects__card-heading card-heading heading">
                   <a href="#">Pong</a>
                 </h3>
-                <p class="projects__card-text">Basic Pong game made with HTML, CSS, and JavaScript</p>
+                <p class="projects__card-text card-text">Basic Pong game made with HTML, CSS, and JavaScript</p>
               </div>
               <div class="projects__card-image">
                 <img src="" alt="">
@@ -336,12 +337,12 @@
             </div>
           </li>
           <li class="projects__list-item">
-            <div class="projects__card">
-              <div class="projects__card-info">
-                <h3 class="projects__card-heading">
+            <div class="projects__card card">
+              <div class="projects__card-info card-info container--flex">
+                <h3 class="projects__card-heading card-heading heading">
                   <a href="#">Snake</a>
                 </h3>
-                <p class="projects__card-text">Basic Snake game made with HTML, CSS, and JavaScript</p>
+                <p class="projects__card-text card-text">Basic Snake game made with HTML, CSS, and JavaScript</p>
               </div>
               <div class="projects__card-image">
                 <img src="" alt="">
@@ -353,14 +354,14 @@
 
       <!---------- Contact---------->
 
-      <section class="contact">
+      <section class="contact container--grid">
         <h2 class="contact__heading">Contact Me</h2>
 
         <!-- contact info -->
 
         <!--
         contact card
-        <div class="contact__card">
+        <div class="contact__card card">
           <dl class="contact__dictionary">
             <dt class="contact__term"></dt>
             <dd class="contact__definition">
@@ -370,7 +371,7 @@
             </dd>
           </dl>
         -->
-          <div class="contact__card">
+          <div class="contact__card card">
             <dl class="contact__dictionary">
               <dt class="contact__term">Phone</dt>
               <dd class="contact__definition">
@@ -412,16 +413,13 @@
      <footer>
 
        <!-- links to social media -->
-       <h2>Social Media</h2>
-       <nav>
-
          <!-- list of social media links -->
-         <ul class="footer__list">
+         <ul class="footer__list list container--flex">
 
            <!--
            social media card
            <li class ="social-media__list-item">
-             <div class="social-media__card">
+             <div class="social-media__card card">
                <a href="#">
                  <img src="" alt="">
                  <h3></h3>
@@ -430,34 +428,31 @@
            </li>
            -->
            <li class ="social-media__list-item">
-             <div class="social-media__card">
-               <a href="#">
-                 <img src="" alt="">
-                 <h3>GitHub</h3>
-               </a>
+             <div class="social-media__card card">
+               <h3>
+                 <a href="#"><img src="" alt="">GitHub</a>
+               </h3>
+
              </div>
            </li>
            <li class ="social-media__list-item">
-             <div class="social-media__card">
-               <a href="#">
-                 <img src="" alt="">
-                 <h3>LinkdIn</h3>
-               </a>
+             <div class="social-media__card card">
+               <h3>
+                 <a href="#"><img src="" alt="">LinkdIn</a>
+               </h3>
              </div>
            </li>
            <li class ="social-media__list-item">
-             <div class="social-media__card">
-               <a href="#">
-                 <img src="" alt="">
-                 <h3>Twitter</h3>
-               </a>
+             <div class="social-media__card card">
+               <h3>
+                 <a href="#"><img src="" alt="">Twitter</a>
+               </h3>
              </div>
            </li>
          </ul>
 
          <!-- copyright info -->
          <p></p>
-       </nav>
      </footer>
   </div>
 
