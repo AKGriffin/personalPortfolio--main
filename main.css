@@ -1,3 +1,9 @@
+*{
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Open Sans" , "Helvetica Neue" , "Arial" , sans-serif ;
@@ -5,8 +11,6 @@ html {
 
 ol , ul {
   list-style: none ;
-  padding: 0;
-  margin: 0;
 }
 
 /* custom properties */
@@ -67,13 +71,11 @@ ol , ul {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: var(--on-background) ;
   background-color: var(--background) ;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.5rem ;
 }
 
@@ -83,32 +85,21 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: var(--secondary-variant) ;
-}
+} */
 
 main {
-  grid-template-rows: repeat(auto-fill, minmax( 100vh , 1fr )) ;
-  max-width: 900px ;
-  margin: auto ;
-  text-align: center;
+
 }
 
 header {
-  padding-top: 3rem ;
-  height: calc( 100vh - 15rem) ;
+  height: 80vh ;
   background-color: var(--primary-variant) ;
-}
-
-.body__wrapper {
-  grid-template-columns: 1fr ;
-  grid-template-rows: auto auto 1fr auto ;
-  min-height: 100vh ;
-  justify-content: center;
 }
 
 /* grid containers */
 .container--grid {
  display: grid ;
- grid-gap: 1rem ;
+ text-align:  center;
 }
 
 /* flex containers */
@@ -116,7 +107,6 @@ header {
   display: flex ;
   justify-content: center ;
   align-items: center ;
-  flex-wrap: wrap;
 }
 
 /* all lists */
@@ -130,44 +120,46 @@ header {
   background-color: lightGray ;
   border: 1px solid #000 ;
   margin: 1rem ;
+  overflow-wrap: break-word;
 }
 
 /* small card */
 .card--small  {
-  height: 100px ;
-  width: 100px ;
+  min-width: 150px ;
+  min-height: 150px ;
 }
 
 /* medium card */
 .card--medium {
-  width: 200px ;
-  height: 200px ;
-}
+  min-width: 200px ;
+  min-height: 200px ;}
 
 /* large card */
 .card--large  {
-  width: 400px ;
+
 
 }
 
 /* card collections */
 .cards {
-  padding: 1rem ;
+grid-auto-flow: column;
 }
 
 /* small card collections */
 .cards--small  {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat( auto-fiil , minmax( 150px , 1fr )) ;
+  grid-template-rows: repeat( auto-fiil , minmax( 150px , 1fr )) ;
 }
 
 /* medium card collections */
 .cards--medium {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat( auto-fiil , minmax( 200px , 1fr )) ;
+  grid-template-rows: repeat( auto-fiil , minmax( 200px , 1fr )) ;
 }
 
 /* large card collections */
 .projects__list {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, 300px);
 }
 
 /* all card info */
@@ -189,22 +181,23 @@ header {
 
 /* all navbars */
 .navbar {
+  grid-template-areas:
+    " logo . nav ";
+  grid-template-columns: maxcontent auto maxcontent ;
+  justify-content: space-between;
   background-color: var(--primary) ;
   width: 100vw ;
+  height: 3rem ;
   position: fixed ;
-  height: 3rem;
-  justify-content: flex-end;
 }
 
 .navbar__nav {
-
+  grid-area: nav ;
+  grid-gap: 2rem;
+  justify-content: space-around;
 }
 
 .header {
-}
-
-.header__navbar {
-
 }
 
 .header__list {
@@ -226,7 +219,7 @@ header {
 
 
 .logo__link {
-
+  grid-area: logo ;
 }
 
 .logo__image {
@@ -234,7 +227,7 @@ header {
 }
 
 .about {
-
+  grid-area: about ;
 }
 
 .about__heading {
@@ -294,7 +287,7 @@ header {
 }
 
 .services {
-
+  grid-area: services ;
 }
 
 .services__heading {
@@ -366,7 +359,7 @@ header {
 }
 
 .projects {
-
+  grid-area: projects ;
 }
 
 .projects__heading {
@@ -406,7 +399,7 @@ header {
 }
 
 .contact {
-
+  grid-area: contact ;
 }
 
 .contact__heading {

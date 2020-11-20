@@ -9,17 +9,35 @@
 </head>
 
 <body>
-
-  <div class="body__wrapper container--grid">
+    <!---------- navbar ---------->
+    <nav id="navbar" class="navbar container--grid">
+      <a href="#" class="logo__link">
+        <img src="" alt="logo__image">
+      </a>
+      <ul class="navbar__nav container--flex list">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">About Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">What I Do</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Past Work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
     <!---------- header ---------->
 
     <header id="header" class="header container--grid">
 
       <!-- logo -->
-      <a href="#" class="logo__link">
-        <img src="" alt="logo__image">
-      </a>
 
     <!-- Hero? -->
 <!--
@@ -40,30 +58,9 @@
 -->
 </header>
 
-    <!---------- navbar ---------->
-    <nav id="navbar" class="navbar container--flex">
-      <ul class="navbar__nav container--flex list">
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">About Me</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">What I Do</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Past Work</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
     <!---------- main content ---------->
 
-    <main class="container--grid">
+    <main class="container--grid ">
 
       <!---------- About Me ---------->
 
@@ -80,12 +77,12 @@
         <p class="about__more-text">Professionally, I am very focused on communication, teamwork, and sustainability. Defining and expanding my role as a developer and collaborator has allowed me to see problems and solutions in new ways. By engaging with communities and individuals, I've been able to further hone and evolve my own skillset and positively influence others, as well. I enjoy being part of something bigger than myself, and I love being able to help create a path towards a better future for our industry.</p>
 
         <!-- Interests -->
-        <section class="interests">
+        <section class="interests container--grid">
           <h3 class="interests__heading">Interests</h3>
           <p class="interests__text"></p>
 
           <!-- list of interests -->
-          <ul class="interests__list cards--small cards container--flex list">
+          <ul class="interests__list cards--small cards container--grid ">
 
             <!-- intetrest card card -->
             <li class="interests__list-item">
@@ -158,7 +155,7 @@
         <!-- list of specialties -->
         <h3 class="specialties__heading">Specialties</h3>
         <p class="specialties__heading"></p>
-        <ul class="specialties__list cards cards--medium container--flex  list">
+        <ul class="specialties__list cards cards--medium container--grid list">
 
         <!--
           service card
@@ -231,7 +228,7 @@
 
         <!-- list of skills -->
         <section class="skills">
-          <ul class="skills__list cards--small cards container--flex list">
+          <ul class="skills__list cards--small cards container--grid list">
 
             <!--
             skill card
@@ -291,7 +288,7 @@
         <p class="projects__text"></p>
 
         <!-- list of projects -->
-        <ul class="projects__list container--grid cards cards--large container--flex list">
+        <ul class="projects__list container--grid cards cards--large container--grid list">
 
           <!--
           project card
@@ -454,6 +451,5 @@
          <!-- copyright info -->
          <p></p>
      </footer>
-  </div>
 
 </body>
